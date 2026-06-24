@@ -9,6 +9,7 @@ export class HomePage extends BasePage {
     //private Locators: 
     private readonly logoutLink: Locator;
     private readonly headers: Locator;
+    private readonly username: Locator;
     
 
     //const... of the class: init the locators
@@ -16,7 +17,7 @@ export class HomePage extends BasePage {
         super(page);
         this.logoutLink = page.getByRole('link', { name: 'Logout' });
         this.headers = page.getByRole('heading', { level: 2 });
-
+        this.username = page.getByRole('link', { name: 'username' });
     };
 
     //public page actions(methods)/behaviour
