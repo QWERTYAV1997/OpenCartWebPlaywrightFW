@@ -9,7 +9,7 @@ export class HomePage extends BasePage {
     //private Locators: 
     private readonly logoutLink: Locator;
     private readonly headers: Locator;
-    private readonly username: Locator;
+
 
     //const... of the class: init the locators
     constructor(page: Page) {
